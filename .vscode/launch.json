@@ -1,0 +1,28 @@
+{
+    // Użyj funkcji IntelliSense, aby uzyskać informacje o możliwych atrybutach.
+    // Najedź kursorem, aby wyświetlić opisy istniejących atrybutów.
+    // Aby uzyskać więcej informacji, odwiedź stronę: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "clean_air",
+            "cwd": "clean_air",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "clean_air (profile mode)",
+            "cwd": "clean_air",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "clean_air (release mode)",
+            "cwd": "clean_air",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
