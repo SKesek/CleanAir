@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 
 import 'package:clean_air/my_home_page.dart';
 import 'package:clean_air/permission_screen.dart';
@@ -16,10 +15,10 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _MyHomePageState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _MyHomePageState extends State<SplashScreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -136,7 +135,7 @@ loadLocationData(value, context) async {
       language: Language.POLISH);
 
   Weather w = await wf.currentWeatherByLocation(lat, lon);
-  log(w.toJson().toString());
+  // log(w.toJson().toString());
 
   String endpoint = 'https://api.waqi.info/feed';
   var keyword = 'geo:$lat;$lon';
@@ -144,7 +143,7 @@ loadLocationData(value, context) async {
   String url = '$endpoint/$keyword/?token=$key';
 
   http.Response response = await http.get(Uri.parse(url));
-  log(response.body.toString());
+  //log(response.body.toString());
 
   Map<String, dynamic> jsonBody = json.decode(response.body);
   AirQuality aq = AirQuality(jsonBody);
@@ -160,7 +159,7 @@ class AirQuality {
   bool isGood = false;
   bool isBad = false;
   String quality = '';
-  String advice = 'Skorzystaj';
+  String advice = '';
   int aqi = 0;
   int pm25 = 0;
   int pm10 = 0;

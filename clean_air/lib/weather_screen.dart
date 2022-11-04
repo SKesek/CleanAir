@@ -10,10 +10,10 @@ class WeatherScreen extends StatefulWidget {
   final Weather weather;
 
   @override
-  State<WeatherScreen> createState() => _MyHomePageState();
+  State<WeatherScreen> createState() => _WeatherScreenState();
 }
 
-class _MyHomePageState extends State<WeatherScreen> {
+class _WeatherScreenState extends State<WeatherScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -395,7 +395,7 @@ class _AirScreenState extends State<AirScreen> {
     return true;
   }
 
-  getGradientByMood(AirQuality air) {
+  LinearGradient getGradientByMood(AirQuality air) {
     if (air.isGood) {
       return const LinearGradient(
         begin: Alignment.bottomRight,
@@ -426,7 +426,7 @@ class _AirScreenState extends State<AirScreen> {
     }
   }
 
-  getBackgroundTextColor(AirQuality air) {
+  Color getBackgroundTextColor(AirQuality air) {
     if (air.isBad || air.isGood) {
       return Colors.black;
     } else {
