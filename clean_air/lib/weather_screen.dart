@@ -231,8 +231,8 @@ class _WeatherScreenState extends State<WeatherScreen> {
         begin: Alignment.bottomRight,
         end: Alignment.topLeft,
         colors: [
-          Color(0xFF5283F0),
-          Color(0xFFCDEDD4),
+          Color(0xFF313545),
+          Color(0xFF121118),
         ],
       );
     } else {
@@ -240,8 +240,9 @@ class _WeatherScreenState extends State<WeatherScreen> {
         begin: Alignment.topRight,
         end: Alignment.bottomLeft,
         colors: [
-          Color(0xFF313545),
-          Color(0xFF121118),
+
+          Color(0xFF5283F0),
+          Color(0xFFCDEDD4),
         ],
       );
     }
