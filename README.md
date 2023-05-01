@@ -1,6 +1,6 @@
 # CleanAir
  
-Aplikacja stworzona w ramach kursu.
+Aplikacja stworzona podczas kursu.
 
 ![CleanAir](https://user-images.githubusercontent.com/113917953/235437967-876cb823-b287-4c78-b72e-a3f8ce9045f2.png)
 
