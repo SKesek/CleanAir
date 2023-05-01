@@ -7,7 +7,7 @@ Aplikacja stworzona w ramach kursu.
 Aplikacja służąca do pokazywania aktualnej pogody oraz stanu powietrza.
 
 Zostały w niej wykorzystane takie paczki jak:
-  Google Fonts
-  Weather
-  Geolocator
-  Sliding Up Panel
+Google Fonts
+Weather
+Geolocator
+Sliding Up Panel
